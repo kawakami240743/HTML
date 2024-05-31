@@ -1,0 +1,28 @@
+.logo {
+    padding: 30px 0 0 30px;
+    position: absolute;
+    width: 100%;
+}
+
+.Header_Menu {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.Header_Menu .Menu-01 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.Header_Menu .Menu-02 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#section01 {
+    position: relative;
+    padding-top: 50px;
+}
