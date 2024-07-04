@@ -1,28 +1,185 @@
-.logo {
-    padding: 30px 0 0 30px;
-    position: absolute;
+.wrap {
     width: 100%;
+    height: 100dvh;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.Header_Menu {
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
+section {
+    background-color:#ddd;
 }
 
-.Header_Menu .Menu-01 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.Header_Menu .Menu-02 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-#section01 {
+header{
     position: relative;
-    padding-top: 50px;
+    height: 10vh;
+    padding: 1.8em  1.8em;
 }
+
+ul {
+    width: 95%;
+    position: absolute;
+    display: flex;
+    font-size: 13px;
+    column-gap: 5em;
+}
+
+li {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+li span {
+    font-size: 8px;
+    position: relative;
+    padding-right: 4em;
+}
+
+li span::after{
+    content: "";
+    position: absolute;
+    top:1.25em;
+    left:2em;
+    background-color: #aaa;
+    display: inline-flex;
+    width: 2.5em;
+    height: 1px;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.headerMenu::before {
+    content: url(../images/svg/logo_min.svg);
+    padding-right: 9em;
+}
+
+ul div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.Instagram{
+    letter-spacing: 0.1em;
+}
+
+.Instagram::before {
+    content: url(../images/svg/ic_ig.svg);
+    position: relative;
+    top: 0.25em;
+    margin-right: 1em;
+}
+
+.ALL_MENU {
+    width: 7em;
+    position: absolute;
+    right: 0;
+}
+
+.ALL_MENU::after {
+    content: url(../images/svg/ic_arrow_right.svg);
+    position: absolute;
+    left: 7em;
+}
+
+main {
+    padding-top: 7em;
+    height: calc(100dvh - 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main::before {
+    content: url(../images/svg/logo.svg);
+    position: absolute;
+}
+
+.mv-action {
+    width: 100%;
+    height: 100%;
+    margin-right: 15%;
+    background-image: url(/assets/images/mv.jpg);
+    background-size: cover;
+    background-position: center center;
+    line-height: 1.5;
+}
+
+.text {
+    padding: 1em;
+    width: 20rem;
+    height: auto;
+    position: absolute;
+    bottom: 7em;
+    right: 2em;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.05em;
+}
+
+.text strong {
+    font-weight: bold;
+    line-height: 5;
+}
+
+.mid{
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+    font-weight: bold;
+
+}
+
+.small {
+    font-size: 9px;
+    line-height: normal;
+}
+
+.ABOUT {
+    position: relative;
+}
+
+.About_hed {
+    display: flex;
+    padding-top: 17.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.About_hed h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    
+}
+
+.nunber{
+    position: absolute;
+    left: 20em;
+}
+
+.nunber::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:2em;
+    background-color: #aaa;
+    width: 6em;
+    height: 1px;
+}
+
+.obj_title{
+    content: url(../images/svg/obj_title.svg);
+    position: absolute;
+    bottom: 4em;
+}
+
+.page1 {
+    text-align: center;
+}
+
+.page1 h2 {
+    
+    margin-top: 3em;
+}
+

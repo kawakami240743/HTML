@@ -4,7 +4,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
 }
+
 
 :where([hidden]:not([hidden='until-found'])) {
 	display: none !important;
@@ -136,4 +142,8 @@
 	white-space: nowrap !important;
 	border: 0 !important;
 	user-select: none !important;
+}
+
+a{
+	display: block;
 }
