@@ -128,7 +128,6 @@ main::before {
     height: 100%;
     font-size: 11px;
     font-weight: bold;
-
 }
 
 .small {
@@ -136,7 +135,7 @@ main::before {
     line-height: normal;
 }
 
-.ABOUT {
+#ABOUT {
     position: relative;
 }
 
@@ -147,21 +146,21 @@ main::before {
     align-items: center;
 }
 
-.About_hed h1 {
+h1 {
     font-size: 2.5em;
-    letter-spacing: 0.1em;
-    
+    letter-spacing: 0.1em;  
 }
 
 .nunber{
     position: absolute;
-    left: 20em;
+    top: 18em;
+    left: 21em;
 }
 
 .nunber::after{
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 0.5em;
     left:2em;
     background-color: #aaa;
     width: 6em;
@@ -175,11 +174,89 @@ main::before {
 }
 
 .page1 {
+    position: absolute;
+    left: 48em;
     text-align: center;
 }
 
 .page1 h2 {
-    
-    margin-top: 3em;
+    text-align: left;
+    margin-top: 5em;
+    line-height: 1.5em;
 }
+
+.page1 p {
+    text-align: left;
+}
+
+p:nth-child(2){
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    margin-top: 2em;
+}
+
+p:nth-child(3){
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.01em;
+    margin-top: 8em;
+}
+
+p:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    bottom: 10em;
+    left:0;
+    background-color: #aaa;
+    width: 3em;
+    height: 1px;
+}
+
+.page2 {
+    width: 100%;
+    height: 1400px;
+}
+
+.image-size {
+    width: 400px;
+    height: 550px;
+}
+
+.about_1 {
+    position: absolute;
+    top: 27em;
+    left: 15em;
+}
+
+.about_2 {
+    position: absolute;
+    top: 14em;
+    right: 15em;
+}
+
+.about_3 {
+    width: 190px;
+    height: 160px;
+    position: absolute;
+    bottom: 50em; 
+    left: 22em;
+}
+
+.about_4 {
+    width: 320px;
+    height: 230px;
+    position: absolute;
+    bottom: 55em;
+    left: 39em;
+}
+
+.about_5 {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    bottom: 50em;
+    right: 20em;
+}
+
 
