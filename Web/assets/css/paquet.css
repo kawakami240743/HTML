@@ -139,7 +139,7 @@ main::before {
     position: relative;
 }
 
-.About_hed {
+.hed {
     display: flex;
     padding-top: 17.5em;
     justify-content: center;
@@ -173,19 +173,19 @@ h1 {
     bottom: 4em;
 }
 
-.page1 {
+.About_page1 {
     position: absolute;
     left: 48em;
     text-align: center;
 }
 
-.page1 h2 {
+.About_page1 h2 {
     text-align: left;
     margin-top: 5em;
     line-height: 1.5em;
 }
 
-.page1 p {
+.About_page1 p {
     text-align: left;
 }
 
@@ -203,7 +203,7 @@ p:nth-child(3){
     margin-top: 8em;
 }
 
-p:nth-child(3)::before{
+#ABOUT p:nth-child(3)::before{
     content: "";
     position: absolute;
     bottom: 10em;
@@ -213,7 +213,7 @@ p:nth-child(3)::before{
     height: 1px;
 }
 
-.page2 {
+.About_page2 {
     width: 100%;
     height: 1400px;
 }
@@ -258,5 +258,152 @@ p:nth-child(3)::before{
     bottom: 50em;
     right: 20em;
 }
+
+/*ここからsection２*/
+
+#MENU{
+    position: relative;
+}
+
+.Menu_page1 {
+    position: absolute;
+    right: 35em;
+    text-align: center;
+}
+
+.Menu_page1 h2 {
+    text-align: left;
+    margin-top: 5em;
+    line-height: 1.5em;
+}
+
+.Menu_page1 p {
+    text-align: left;
+}
+
+#MENU p:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    bottom: 21em;
+    left:0;
+    background-color: #aaa;
+    width: 3em;
+    height: 1px;
+}
+
+.Menu_page1 a {
+    text-align: left;
+    margin-top: 5em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+.Menu_page2 {
+    width: 100%;
+    height: 700px
+}
+
+.menu_1 {
+    position: absolute;
+    top: 10em;
+    left: 26em;
+    width: 600px;
+    height: auto;
+}
+
+.menu_2 {
+    position: absolute;
+    right: 10em;
+    width: 250px;
+    height: 450px;
+}
+
+/*ここからsection３*/
+
+#CONCEPT {
+    background-color: #292929;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 180em
+}
+
+.Concept_page01 {
+    width: 100%;
+    display: flex;
+}
+
+.Concept_page1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10em;
+    margin-right: 1em;
+}
+
+.obj_title_white{
+    content: url(../images/svg/obj_title_white.svg);
+    position: absolute;
+    bottom: 4em;
+}
+
+.Concept_page1 h2 {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.Concept_page1 p {
+    text-align: left;
+}
+
+.page1_line::before{
+    content: "";
+    position: absolute;
+    background-color: white;
+    top: 13em;
+    width: 3em;
+    height: 1px;
+}
+
+.Concept_page2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    margin-top: 10em;
+    margin-right: 25em;
+    line-height: 4em;
+    text-align: center;
+}
+
+.Concept_image_1 {
+    width: 220px;
+    height: auto;
+}
+
+.concept_2 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 65vw;
+    left: 15em;
+}
+
+.concept_3 {
+    width: 650px;
+    height: auto;
+    position: absolute;
+    top: 60vw;
+    left: 30em;
+}
+
+.concept_4 {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 70vw;
+    right: 27em;
+}
+
 
 
