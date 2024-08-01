@@ -135,6 +135,8 @@ main::before {
     line-height: normal;
 }
 
+/*ここからsection1*/
+
 #ABOUT {
     position: relative;
 }
@@ -193,7 +195,7 @@ p:nth-child(2){
     font-size: 12px;
     letter-spacing: 0.1em;
     opacity: 0.5;
-    margin-top: 2em;
+    margin-top: em;
 }
 
 p:nth-child(3){
@@ -318,6 +320,16 @@ p:nth-child(3){
     height: 450px;
 }
 
+#MENU span::after {
+    content: "";
+    position: absolute;
+    bottom: -1em;
+    left: 0;
+    background-color: #292929;
+    width: 15em;
+    height: 1px;
+}
+
 /*ここからsection３*/
 
 #CONCEPT {
@@ -325,26 +337,36 @@ p:nth-child(3){
     color: white;
     position: relative;
     width: 100%;
-    height: 180em
-}
-
-.Concept_page01 {
-    width: 100%;
-    display: flex;
-}
-
-.Concept_page1 {
-    position: relative;
-    width: 100%;
     height: auto;
-    margin-top: 10em;
-    margin-right: 1em;
 }
 
 .obj_title_white{
     content: url(../images/svg/obj_title_white.svg);
     position: absolute;
     bottom: 4em;
+}
+
+.Concept_page1 {
+    width: 100%;
+    display: flex;
+}
+
+.Concept_page1_01 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    margin: 10em 7em 0 15em;
+    line-height: 4em;
+    text-align: center;
+}
+
+.Concept_page1_02 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10em;
+    margin-right: 1em;
 }
 
 .Concept_page1 h2 {
@@ -356,7 +378,7 @@ p:nth-child(3){
     text-align: left;
 }
 
-.page1_line::before{
+.Concept_line::before{
     content: "";
     position: absolute;
     background-color: white;
@@ -365,20 +387,14 @@ p:nth-child(3){
     height: 1px;
 }
 
-.Concept_page2 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: left;
-    margin-top: 10em;
-    margin-right: 25em;
-    line-height: 4em;
-    text-align: center;
-}
-
 .Concept_image_1 {
     width: 220px;
     height: auto;
+}
+
+.Concept_page3 {
+    width: 100%;
+    height: 700px;
 }
 
 .concept_2 {
@@ -405,5 +421,244 @@ p:nth-child(3){
     right: 27em;
 }
 
+.Concept_page4 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
+}
+
+.Concept_page4_01 {
+    position: relative;
+    margin-left: 20em;
+}
+
+.Concept_page4 img {
+    width: 800px;
+    height: auto;
+    margin-left: 12em;
+}
+
+.Concept_fotter {
+    margin-top: 20vh;
+}
+
+/*ここからsection４*/
+
+#SHOP {
+    position: relative;
+}
+
+/*下のやつは後で修正する
+
+/*.Shop_hed {
+    display: flex;
+    padding-top: 10.5em;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.Shop_page1 {
+    display: flex;
+    margin: 7em 0 0 10em;
+    column-gap: 8em;
+    justify-content: center;
+    align-items: center;
+}
+
+.Shop_image1 {
+    width: 210px;
+    height: 300px;
+}
+
+.Shop_page1_1 {
+    margin-bottom: 4em;
+}
+
+.Shop_page1_1 p:nth-child(2){
+    padding-bottom: 5em;
+    margin-bottom: 4em;
+    position: relative;
+}
+
+.Shop_page1_1 p:nth-child(2)::after {
+    display: inline-block;
+    content: "";
+    background-color: #817f7f;
+    width: 5em;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.Shop_page1_1 p:nth-child(3) {
+    margin-top: 0;
+}
 
 
+.Shop_image2 {
+    width: 400px;
+    height: auto;
+}
+
+.Shop_page2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5em;
+    padding-bottom: 13em;
+}
+
+.Shop_image3 {
+    width: 590px;
+    height: 400px;
+    margin-right: 4em;
+    margin-bottom: 10em;
+}
+
+.Shop_image4 {
+    width: 330px;
+    height: auto;
+    margin-top: 15em;
+    margin-right: 5em;
+}
+
+/*ここからsection5*/
+
+#RESERVE {
+    background-color: #292929;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.Reserve_head {
+    display: flex;
+    padding-top: 14.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+/*この部分は後で修正*/
+.Reserve_nunber{
+    position: absolute;
+    top: 10em;
+    left: 15em;
+    font-size: 1.5em;
+}
+
+/*この部分は後で修正*/
+.Reserve_nunber::after{
+    content: "";
+    position: absolute;
+    bottom: 0.5em;
+    left:2em;
+    background-color: #aaa;
+    width: 6em;
+    height: 1px;
+}
+
+.Reserve_page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7em;
+    gap: 1em;
+
+}
+
+.Reserve_img {
+    width: 540px;
+    height: auto;
+}
+
+.Reserve_page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10em;
+}
+
+.Reserve_page2_1 {
+    margin-right: 8em;
+    margin-left: 4em;
+}
+
+.Reserve_page2_1 p {
+    line-height: 3em;
+    margin-bottom: 6em;
+}
+
+.Reserve_page2_1 div{
+    position: relative;
+    padding-bottom: 1em;
+}
+
+.Reserve_page2_1 div::after {
+    display: inline-block;
+    content: "";
+    width: 13em;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*opcityがいらない*/
+.Reserve_page2_2 p {
+    font-size: 14px;
+    opacity: 1;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+.Reserve_page2_2 p:nth-child(1) {
+    margin-bottom: 3em;
+} 
+
+/*ここからsection６*/
+#ACCESS {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/*後で修正*/
+.Access_head{
+    display: flex;
+    padding-top: 10.5em;
+    margin-bottom: 7em;
+    justify-content: center;
+    align-items: center;
+}
+
+/*後で修正*/
+.Access_nunber {
+    position: absolute;
+    top: 6.5em;
+    left: 15em;
+    font-size: 1.5em;
+}
+
+.Access_nunber::after {
+    content: "";
+    position: absolute;
+    background-color: #817f7f;
+    bottom: 0.5em;
+    left:2em;
+    width: 6em;
+    height: 1px;
+}
+
+.Access_page1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
